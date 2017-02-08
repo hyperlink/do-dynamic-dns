@@ -1,0 +1,39 @@
+{
+  "name": "doddns",
+  "version": "0.0.0-development",
+  "description": "Dynamic DNS Client that uses Digital Ocean DNS API to update a subdomain A record with current IP address",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "bin": "./index.js",
+  "keywords": [
+    "DigialOcean",
+    "ip",
+    "domain",
+    "ddns",
+    "dns",
+    "dynamic"
+  ],
+  "engines": {
+    "node": ">4.4.7"
+  },
+  "author": "Xiaoxin Lu <javascript@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "digitalocean": "^0.9.1",
+    "lodash": "^4.15.0",
+    "public-ip": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "proxyquire": "^1.7.11",
+    "sinon": "^1.17.7",
+    "sinon-as-promised": "^4.0.2",
+    "standard": "^8.6.0",
+    "semantic-release": "^6.3.2"
+  },
+  "repository": "hyperlink/do-dynamic-dns"
+}
