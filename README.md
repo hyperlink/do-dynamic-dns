@@ -1,5 +1,7 @@
 # Dynamic DNS client for Digital Ocean
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hyperlink/do-dynamic-dns.svg)](https://greenkeeper.io/)
+
 1. Get current public IP address
 2. Compares it to subdomain A record
 3. If different update a subdomain A record with current IP address
