@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict'
 
 if (!process.env.DIGITAL_OCEAN_TOKEN || !process.env.SERVER_NAME) {
