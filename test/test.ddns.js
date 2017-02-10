@@ -157,4 +157,15 @@ describe('Dynamic DNS Client', function () {
     require('../')
     sinon.assert.calledWithExactly(console.error, 'Missing required environment variables: DIGITAL_OCEAN_TOKEN or SERVER_NAME')
   })
+
+  it('should call updateNotifier notify', function () {
+    const notify = sandbox.stub()
+    const updateNotifier = sandbox.stub().returns({ notify })
+    proxyquire('../', {
+      'update-notifier': updateNotifier
+    })
+    sinon.assert.calledWith(updateNotifier, sinon.match.object)
+    sinon.assert.calledOnce(notify)
+    notify.calledAfter(updateNotifier)
+  })
 })
