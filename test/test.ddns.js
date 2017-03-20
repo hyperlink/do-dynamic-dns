@@ -3,7 +3,6 @@
 'use strict'
 
 const sinon = require('sinon')
-require('sinon-as-promised')
 const proxyquire = require('proxyquire').noCallThru()
 const assert = require('assert')
 
