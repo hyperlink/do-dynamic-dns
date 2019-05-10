@@ -26,7 +26,7 @@
     "digitalocean": "^0.10.0",
     "lodash": "^4.15.0",
     "public-ip": "^2.1.0",
-    "update-notifier": "^2.1.0"
+    "update-notifier": "^2.6.0"
   },
   "devDependencies": {
     "mocha": "^5.0.0",
